@@ -4,7 +4,8 @@
 //
 //  Created by Asher Abrams on 2018/02/06.
 //  Copyright © 2018 Asher Abrams. All rights reserved.
-//
+//  
+// 
 
 // PREPROCESSOR
 #include <iostream>
@@ -13,16 +14,16 @@
 using namespace std;
 
 // DECLARATIONS
-int i;
+int x;
 double y, sum;
 double func01(int);
 
 // DEFINITIONS
-double func01(int i)
+double func01(int x)
 {
-    for(i = 1; i <= 20; i++)
+    for(x = 1; x <= 20; x++)
     {
-        y = pow(2, -i);
+        y = pow(2, -x);
         sum = sum + y;
         cout << y << '\n';
         cout << sum << '\n';
@@ -33,6 +34,6 @@ double func01(int i)
 
 // MAIN
 int main(int argc, const char * argv[]) {
-    func01(i);
+    func01(x);
     return 0;
 }
